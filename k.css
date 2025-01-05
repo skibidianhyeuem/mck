@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+}
+.header-item{
+    display: flex;
+    gap: 30px;
+    margin: 0 5px;
+    
+}
+
+.header-item a, .header-item i {
+
+    text-decoration: none;
+    color:rgb(246, 244, 244);
+    font-size: 20px;
+    position: relative;
+}
+#header a::after{
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(99, 1, 1, 0.907);
+    left: 0;
+    transform: scale(0, 0);
+    transition: all ease .4s;
+}
+
+#header a:hover::after{
+    transform: scale(1,1);
+}
+
+#banner {
+    background-image: url("202401030032380376.webp");
+    background-position: center;
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(116, 9, 9) ;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#banner .banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#list-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product-item {
+    width: calc(25% - 10px);
+    position: relative;
+}
+
+.product-item-img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.product-item-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+#setion-header, #list-products{
+    width: 1200px;
+    margin: 40px auto;
+}
+/*
+#section-header {
+    text-align: center;
+    text-transform: uppercase;
+}
+.product-item .product-item-image
+{
+    overflow: hidden;
+    height: 350px;
+}
+.product-item .product-item-image img {
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    height: 100%;
+} */
+ .button {
+    border: 0px;
+ }
+.info-1 {
+    position: absolute;
+    color: white;
+    bottom: 15px;
+}
+.info-2 {
+    position: absolute;
+    color: white;
+    bottom: 15px;
+}
+.info-3 {
+    position: absolute;
+    color: white;
+    bottom: 15px;
+}
+.infomation{
+ font-size:50px;
+ position: relative;
+
+ 
+}
+.info{
+   background-color: black;
+   color: azure;
+}
+
+.info-content {
+    width: 700px;
+    margin: auto;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    
+}
+ 
+.de-info1{
+    font-size:50px;
+    position: relative;
+}
+.de-info-content{
+    background-color: black;
+    color: azure;
+}
+.de-info-content img{
+display: flex;
+
+}
+
+.alb-ms {
+    display: flex;
+    flex-direction: column;
+}
+
+.alb-ms-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.alb-ms-item:hover {
+    background-color: #f0f0f0;
+}
+
+.alb-ms-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.alb-content-img {
+    width: 100%;
+    height: 128px;
+    border-radius: 5px;
+}
+
+.alb-ms-item{
+    position: relative;
+    width: calc(20% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.alb-ms-item::after {
+    border-radius: 50%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 70%;
+    opacity: 0;
+    transform: translateY(-50%);
+    right: 10px;
+    content: '>';
+    transition: all ease .3s;
+}
+.alb-ms-item:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+#banner {
+    padding-top:  83px;
+    background-origin: border-box;
+}
